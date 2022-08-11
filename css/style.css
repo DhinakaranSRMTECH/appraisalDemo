@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    font-family:'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.auth-form .form-control{
+    border-radius: 4em;
+    height: calc(1.5em + 1.3rem + 2px);
+}
+.flex_col{
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+
+
+.left-bg{
+    background: #34A4EA;
+    color: #fff;
+}
+.leftImgH {
+    height:100vh;
+}
+.login_sign_p{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.padd-y{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.welcome-head{
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.2;
+    --bs-text-opacity: 1;
+}
+.welcome-sub-head{
+    color: #B5B5C3;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.welcome-sub-head a{
+    font-weight: 600;
+    color: #50CD89;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.authForm{
+    margin-top: 40px;
+}
+.authForm .form-control{
+    min-height: calc(1.5em + 1.65rem + 2px);
+    padding: 0.825rem 1.5rem;
+    font-size: .7rem;
+    border-radius: 0.625rem;
+    margin-bottom: 30px;
+    background-color: #F5F8FA;
+}
+.authForm label{
+    --bs-text-opacity: 1;
+    /* color: #34A4EA; */
+    font-weight: 600;
+}
+.btn-welcome{
+    padding:calc(0.825rem + 1px) calc(1.75rem + 1px) !important;
+    border-radius: 0.625rem !important;
+    width: 100% !important;
+    margin-top: 35px !important;
+    background-color: #50CD89 !important;
+    border-color: #50CD89 !important;
+    
+}
+
+
+.form-check-input[type=checkbox] {
+    border-radius: 10px;
+}
+.ElHide{
+    display: none;
+}
+.ElShow{
+    display: block;
+}
+
+.form-check-input{
+    width: 1.25rem;
+    border-color: #B5B5C3;
+    outline: 0;
+    height: 1.25rem;
+    margin-top: -0.125rem;
+    vertical-align: top;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 17px;
+    border-radius: 15 !important;
+    /* margin: 0; */
+    float: none;
+    flex-shrink: 0;
+    border: 0;
+    background-color: #EFF2F5;
+    background-size: 60% 60%;
+    filter: none;
+}
+a {
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+.forgot_pass{
+    color: #34A4EA;
+    font-size: 16px;
+}
+/* svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
+  /* .container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  } */
+ 
+  .visible_eye_div{
+    position: relative;
+    left: 80%;
+    top: 43px;
+  }
+  .form-focus:focus {
+    color: #ef5350 !important;
+    border-color: #ef5350 !important;
+    outline: 0;
+}
+.otp_inputs_parent{
+    width: 288px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 18px;
+}
+.otp_inputs{
+    width: 330px;
+    border: 0;
+    height: 56px;
+    font-size: 22px;
+    background: #fff;
+    caret-color: transparent;
+    font-family: monospace;
+    padding-left: 30px;
+    letter-spacing: 58px;
+}
+.otp_inputs:focus {
+    border: 0;
+    outline: none;
+}
+
+.otp_mobile_no{
+    font-weight: 600;
+    color: #50CD89;
+    margin-left:10px
+}
+
+.otp_inputs_fields{
+    top: 0;
+    width: 56px;
+    height: 56px;
+    margin: 0px 8px;
+    position: absolute;
+    border: 1px solid #ddd;
+    font-size: 0px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+.otp_inputs_fields:nth-of-type(1) {
+    left: 0;
+}
+.otp_inputs_fields:nth-of-type(2) {
+    left: 72px;
+}
+.otp_inputs_fields:nth-of-type(3) {
+    right: 72px;
+}
+.otp_inputs_fields:nth-of-type(4) {
+    right: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.active_inp{
+    border: 1px solid #50CD89;
+}
+.home_color{
+    background-color: #fff;
+}
+.form_head{
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+}
+.box_bottom {
+    box-shadow: 0 6px 7px -5px #353535;
+    border: 1px solid #e4e4e4;
+    border-bottom: transparent;
+    background: #34A4EA;
+  }
+  .home_head{
+      color: #fff !important;
+      font-size: 30px;
+      margin-top: 15px;
+  }
+  .navReact .nav-link{
+    font-size: 1rem;
+    line-height: 1.43;
+    font-weight: 700;
+    color: #333 !important;
+    letter-spacing: -0.9px;
+  }
+  .navReact .nav-link:hover{
+    color: #336cfb !important;
+  }
+  .navReact .nav-link.active{
+    color: #336cfb !important;
+  }
+ .MuiAvatar-fallback{
+    position: absolute;
+    top: 4px !important;
+    left: 4px !important;
+  }
+  .logoutSvg{
+    position: absolute !important;
+    top: 7px!important;
+    left: 13px !important;
+  }
+  .sub_head_form{
+    font-weight: 600;
+    color: #50CD89;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+  }
+  .navReact .form-label{
+      letter-spacing: -0.3px;
+  }
+.MuiDataGrid-columnHeaders{
+    background: rgba(31,32,34,.1);
+}
+  .css-1jbbcbn-MuiDataGrid-columnHeaderTitle{
+      font-weight:600 !important;
+  }
+  .MuiDataGrid-virtualScrollerRenderZone{
+    background: hsla(0,0%,92.2%,.3) !important;
+  }
+  .css-1xy1myn-MuiDataGrid-root .MuiDataGrid-row:hover, .css-1xy1myn-MuiDataGrid-root .MuiDataGrid-row.Mui-hovered{
+    --bs-table-accent-bg: none;
+    box-shadow: 0 0 10px rgb(0 0 0 / 12%) !important;
+    transform: scale(1);
+    z-index: 1;
+    cursor: pointer;
+    background: rgb(253 250 250 / 0%) !important;
+  }
+  .singUpH{
+      display: none;
+  }
+  .singUpB{
+    display: block;
+}
+#goBackBtn{
+    margin-top:0 !important;
+    width:unset !important
+}
+.navbar-toggler{
+    padding: 5px 10px;
+    margin-left: 10px;
+    border:none;
+}
+.order_flex{
+    order:3;
+}
+.gridSkeleton{
+    /* display: grid;
+    grid-template-columns: 20% 40% 40%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boxSkeleton{
+    margin-left:15px;
+  
+    margin-right:15px
+}
+.progressSkeleton{
+   
+    margin-right:15px;
+}
+@media only screen and (max-width:991px){
+    .order_flex{
+        order:unset;
+    }
+    .dropdown-menu{
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+@media only  screen and (max-width:768px){
+    .login_sign_p{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .navbar-toggler{
+        order:3;
+    }
+    .dropdown-menu{
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .navbar-toggler{
+        padding: 5px 10px;
+        margin-left: 10px;
+        border:none;
+    }
+    .welcome-head{
+        font-size: 1.15rem;
+    }
+    .h3, h3 {
+        font-size: 1.175rem;
+    }
+    .css-1xy1myn-MuiDataGrid-root{
+        font-size: 0.79rem;
+    }
+    .h1, h1 {
+        font-size: 1.425rem;
+    }
+}
