@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appraisal Scores Page</title>
+    <!--CSS-->
+    <link href="./assets/css/fontawesome.min.css" crossorigin  rel="stylesheet" type="text/css"/>
+    <!--Style Sheets-->
+    <link crossorigin rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link crossorigin rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/jquery.dataTables.css" />
+    
+   
+</head>
+<body>
+    <section class="navbar-section">
+        <div class='navbar-desktop'>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white navReact mb-2">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src='./assets/images/logo.jpg' class='SRMH-logo img-fluid logoH' alt='SRM Hospitals Logo' />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-baseline nav_coll_flex">
+                            <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="./home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./assessor.html">Assessor</a>
+                            </li>
+                          
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./reviewer.html">Reviewer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./hod.html">HOD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="#">Scores</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Settings <span class="fa_chrvon"><i class="fa-light fa-chevron-down ml-2"></i></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./homeClinic.html">Guidelines</a></li>
+                                   
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/avatar.png" alt="Avatar" class="avatarImg">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <h6 class="profile-name" href="#">John Doe</h6>
+                                        <p class="profess" href="#">Front End Developer</p>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-light fa-trophy-star mr-2"></i>Acheivment</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-light fa-people-group mr-2"></i>Team</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-light fa-user-gear mr-2"></i>Settings</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="./login.html"><i class="fa-light fa-power-off mr-2"></i>Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            </div>
+    </section>
+    
+    <secition class="table-section">
+        <div class="container my-4">
+            <div class="row row-xs mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                       <div class="card-body">
+                        <div class="performanceTable py-4" id="table-tab-content-0">
+                            <div>
+
+                           
+                            <div class="mb-3">
+                                <h4 class="font-weight-bold mb-0">Sum of Public Matrix  100 points</h4>
+                            </div>
+                           
+                            <div class="tables">
+                                <table id="scoresTable" class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>SI.No</th>
+                                            <th>Attributes</th>
+                                            <th>Details</th>
+                                            <th>Maximum Points  Assigned</th>
+                                            <th>Scored Points</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            </div>
+                            <div class="my-4">
+                                <div class="mb-3">
+                                    <h4 class="font-weight-bold mb-0">Five Point Scale Rating</h4>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>5 Point Scale Range</th>
+                                                <th>Rating (to be reduced to 100)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Above 90</td>
+                                                <td>Significantly exceeds performance standards</td>
+                                            </tr>
+                                           <tr>
+                                                <td>2</td>
+                                                <td>81 to 90</td>
+                                                <td>Exceeds performance standards</td>
+                                           </tr>
+                                           <tr>
+                                                <td>3</td>
+                                                <td>71 to 80</td>
+                                                <td>Achieves performance standards</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>61 to 70</td>
+                                                <td>61 to 70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>60 and below 60</td>
+                                                <td>Significantly below expected performance standards</td>
+                                             </tr>
+                                        </tbody>
+                
+                                    </table>
+                                </div>
+                            </div>
+                          </div>
+                         
+                       </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <hr/>
+           
+
+        </div>
+    </secition>
+    <section class="copyright text-center">
+        <div class="container-fluid">
+            <div class="row row-xs">
+                <div class="col-md-12">
+                    <p><img class="img-fluid footer_img" src="./assets/images/footer_logo.png" /> Powered By SRM Technologies© . All rights reserved</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+   
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/fontawesome.min.js"></script>
+    <script src="./assets/js/datatables.min.js"></script>
+    <script src="./assets/js/datatables_advanced.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.dropdown').click(function(){
+                $('.dropdown-menu').removeClass('show');
+                $(this).find('ul').addClass('show');
+                $('.fa_chrvon').html('<i class="fa-light fa-chevron-down ml-2"></i>');
+                if($(this).find('ul').hasClass('show')){
+                    $(this).children('a').find('span').html('<i class="fa-light fa-chevron-up ml-2"></i>');
+                }
+            });
+
+            
+            //Socres Table
+            var dataSetPer = [
+               
+                ["A","Academics + Professional",
+                "",
+                "5"],
+                ["B","Research",
+                "",
+                "5"],
+                ["C","Administration",
+                "",
+                "2"],
+                
+                ["D","Personality",
+                "",
+                "5"],
+                
+               
+                ["E","","Total",""]
+                
+               
+            ]
+            var tableResarch = $('#scoresTable').DataTable({
+                data:dataSetPer,
+                columns: [
+                { title: "S.No" },
+                { title: "Attributes"  },
+                { title: "Points Scored" },
+                { title: "Points Assigned" }
+                   
+                  
+            ],
+            "columnDefs": [ {
+                "targets": 3,
+                "sortable": false
+                },
+                {
+                "targets": 7,
+                "sortable": false
+                } ],
+                
+            
+            });
+            //Table ENd
+          
+           
+        })
+        $(document).on("click", function(event){
+            var trigger = $(".dropdown");
+            if(trigger !== event.target && !trigger.has(event.target).length){
+                $(".dropdown-menu").removeClass('show');
+                $(trigger).children('a').find('span').html('<i class="fa-light fa-chevron-down ml-2"></i>');
+            }            
+        });
+    </script>
+</body>
+</html>

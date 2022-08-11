@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appraisal Login</title>
+    <!--CSS-->
+    <link href="./assets/css/fontawesome.min.css" crossorigin  rel="stylesheet" type="text/css"/>
+    <!--Style Sheets-->
+    <link crossorigin rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link crossorigin rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class='container-fluid px-0'>
+        <div class='row row-xs login_sign_p'>
+            <div class='col-md-5'>
+               
+               
+                    
+                  
+                    <div class='left-bg'>
+                        <div class='welcome-log-cont'>
+                            <img src='./assets/images/image_11.svg'  class='img-fluid leftImgH'  alt='Welcome Logo' />
+                        </div>
+                    </div>
+               
+                    
+                    
+               
+            </div>
+            <div class='col-md-7'>
+                <div class='row row-xs justify-content-center'>
+                    <div class='col-md-7 padd-y'>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class='text-center'>
+                                    <img src='./assets/images/logo.jpg' class='SRMH-logo img-fluid' alt='SRM Hospitals Logo' />
+                                        <h1 class='text-dark mb-1 welcome-head'>Sign In to Appraisal Portal</h1>
+                                       
+                                </div>
+                                <div class='authForm'>
+                                    <form class='row g-3' noValidate id="loginForm">  
+                                        <div class='col-12'>
+                                            <label  class='form-label'><span class=""><i class="loginIcon fa-light fa-id-card-clip"></i></span>Net ID</label>
+                                            <input type='text'  class='form-control form-focus' name="netID" onchange="checkUsername()" id='netID'/>
+                                            <p class="errorText"></p>
+                                        </div>
+                                        
+                                        <div class='col-12 position-relative'>
+                                            <label  class='form-label'><i class="loginIcon fa-light fa-shield-keyhole"></i>Password</label>
+                                            <input type='password'  class='form-control form-focus' onchange="checkPassword()" id='enterPass'/>
+                                            <p class="errorTextPass"></p>
+                                        </div>
+                                      
+                                        <div class='col-12 mb-3'>
+                                             
+                                            <div class="col-12">
+                                                <a type="submit" class="btn btn-welcome btn_green text-white" onclick="validate()" href="./home.html">Sign in</a>
+                                            </div>
+                                           
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/fontawesome.min.js"></script>
+    <script>
+        var btn_green = document.querySelector('.btn_green');
+        btn_green.style.pointerEvents  = "none";
+        var netID = document.getElementById('netID').value;
+        var passwordInp = document.getElementById('netID').value;
+        function checkUsername(username){
+            var pattern = /^[a-z0-9_-]{4,15}$/;
+            if(pattern.test(username)){
+                var errorText =document.querySelector('.errorText').text = ''
+                console.log('valid user')
+                btn_green.style.pointerEvents  = "all";
+            }else{
+                var errorText =document.querySelector('.errorText').text = 'Net ID is not valid'
+                console.log('not valid user')
+                btn_green.style.pointerEvents  = "none";
+            }
+        }
+        function checkPassword(password){
+            var pattern = /^[a-zA-Z0-9_-]{5,15}$/;
+            if(pattern.test(password)){
+                console.log('valid pass')
+                var errorText =document.querySelector('.errorTextPass').text = ''
+                btn_green.style.pointerEvents  = "all";
+            }else{
+                btn_green.style.pointerEvents  = "all";
+                console.log('not valid pass')
+                var errorText =document.querySelector('.errorTextPass').text = 'Password is not valid'
+            }
+        }
+
+    </script>
+</body>
+</html>
